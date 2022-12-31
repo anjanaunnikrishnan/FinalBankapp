@@ -1,0 +1,54 @@
+1.2)View to component
+a)event binding -(event-name)="function()"(from html-->ts)
+b) event binding using $event-(event-name)="function-name($event)"
+c)event binding using template referencing variable-#variable_name
+
+
+2)
+2 way data finding
+data sharing only two direction(ts-->html and html-->ts)
+1)ngModel binding -import formsModule in app.module.ts
+[(ngModel)]="property_name"
+
+
+Angular Routing
+To set path for component
+
+
+{
+    path:value,component:component_name
+},
+login- by default class name login component,login first page
+{
+    path:'',component:LoginComponent
+
+
+},
+
+
+3)Angular Services
+``
+TO  hold reduntant database
+To create new services - ng g s service_name
+
+4)Dependency Injection
+
+To share data between two dependand classes
+constructor(private ds:DataService)
+
+
+5)Angular Directives To manipulate DOM
+a)component directives(array)
+b)structural directives(table)
+                ->*ngFor
+
+
+6)Angular FORMS
+a)Template driven Forms(first design the html template)
+b)Model driven Forms(first design model in ts file)
+       1)Reactive Forms
+       formGroup,array,control
+       for advanced validataion
+import from Reactive Forms Modeule(in app.module.ts)
+
+

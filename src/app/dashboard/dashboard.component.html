@@ -1,0 +1,46 @@
+<div class="'parent">
+<div>
+  <h1>welcome {{user}}</h1>
+  <a routerLink="/transaction">Transaction History</a>
+</div>
+<div class="child">
+<div class="row" style="background-color:rgb(97, 228, 228) ; width: 400px;height: 550px;margin-left: 430px;margin-top: 100px;border-radius: 25%;border: 3px ridge rgb(97, 228, 228);">
+  <h1 style="padding-left: 114px;">DEPOSIT</h1>
+
+
+  <img src="../../assets/New folder/BANK.jfif" style="width: 100px; padding-left: 160px;" alt="">
+  <br><br>
+     <!-----Properrty binding-->
+  <input [(ngModel)] ="acno" id="depo_acno" type="text" placeholder="Account number" style="background-color:rgba(199, 246, 246, 0.737);margin-left: 20px;width: 350px;height: 45px; padding-left: 12px;border: 1px ridge rgb(97, 228, 228);border-radius: 20px;font-size: 20px;color: black;">
+  <br><br>
+  <input  [(ngModel)] ="pswd"id="depo_password" type="text" placeholder="Password" style="background-color:rgba(199, 246, 246, 0.737);margin-left: 20px;width: 350px;height: 45px; padding-left: 12px;border: 1px ridge rgb(97, 228, 228);border-radius: 20px;font-size: 20px;color: black;">
+<br><br>
+<input [(ngModel)] ="amount"id="depo_amount" type="text" placeholder="Amount" style="background-color:rgba(199, 246, 246, 0.737);margin-left: 20px;width: 350px;height: 45px; padding-left: 12px;border: 1px ridge rgb(97, 228, 228);border-radius: 20px;font-size: 20px;color: black;">
+<br><br>
+<button (click)="deposit()" style="width: 100px;height: 50px;margin-left: 160px;background-color: aqua;border: 1px,solid,aqua; border-color: aqua;border-radius: 102px;">DEPOSIT</button>
+<br>
+<!-- <h2><a routerLink="" style="padding-left: 183px;">Sign in</a>    </h2> -->
+</div>
+<div class="row" style="background-color:rgb(97, 228, 228) ; width: 400px;height: 550px;margin-left: 430px;margin-top: 100px;border-radius: 25%;border: 3px ridge rgb(97, 228, 228);">
+  <h1 style="padding-left: 114px;">WITHDRAW</h1>
+
+
+  <img src="../../assets/New folder/BANK.jfif" style="width: 100px; padding-left: 160px;" alt="">
+  <br><br>
+     <!-----Properrty binding-->
+  <input [(ngModel)] ="acno1" id="with_acno" type="text" placeholder="Account number" style="background-color:rgba(199, 246, 246, 0.737);margin-left: 20px;width: 350px;height: 45px; padding-left: 12px;border: 1px ridge rgb(97, 228, 228);border-radius: 20px;font-size: 20px;color: black;">
+  <br><br>
+  <input  [(ngModel)] ="pswd1"id="with_password" type="text" placeholder="Password" style="background-color:rgba(199, 246, 246, 0.737);margin-left: 20px;width: 350px;height: 45px; padding-left: 12px;border: 1px ridge rgb(97, 228, 228);border-radius: 20px;font-size: 20px;color: black;">
+<br><br>
+<input [(ngModel)] ="amount1"id="with_amount" type="text" placeholder="Withdraw" style="background-color:rgba(199, 246, 246, 0.737);margin-left: 20px;width: 350px;height: 45px; padding-left: 12px;border: 1px ridge rgb(97, 228, 228);border-radius: 20px;font-size: 20px;color: black;">
+<br><br>
+<button (click)="withdraw()" style="width: 100px;height: 50px;margin-left: 160px;background-color: aqua;border: 1px,solid,aqua; border-color: aqua;border-radius: 102px;">WITHDRAW</button>
+<br>
+<!-- <h2><a routerLink="" style="padding-left: 183px;">Sign in</a>    </h2> -->
+</div>
+</div>
+</div>
+
+
+
+
